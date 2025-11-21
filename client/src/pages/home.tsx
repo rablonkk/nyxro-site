@@ -890,7 +890,7 @@ export default function Home() {
             
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
               <a 
-                href="https://discord.gg/gYCNHg2FAK" 
+                href="https://discord.com/invite/MT7RPUQA3d" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-foreground transition-colors"
