@@ -178,8 +178,8 @@ export default function Home() {
             if (data.data.discord_status) {
               setDiscordStatus(data.data.discord_status);
             }
-            if (data.data.user && data.data.user.avatar) {
-              const avatarUrl = `https://cdn.discordapp.com/avatars/523783344979443712/${data.data.user.avatar}.png`;
+            if (data.data.discord_user && data.data.discord_user.avatar) {
+              const avatarUrl = `https://cdn.discordapp.com/avatars/523783344979443712/${data.data.discord_user.avatar}.png`;
               setDiscordAvatar(avatarUrl);
             }
           }
