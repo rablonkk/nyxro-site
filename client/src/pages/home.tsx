@@ -286,7 +286,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover" />
+            <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover dark:invert-0 invert" />
             <span className="font-bold text-lg">Nyxro</span>
           </div>
           <div className="flex items-center gap-3">
@@ -324,7 +324,7 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-                <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-24 h-24 rounded-2xl object-cover" />
+                <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-32 h-32 rounded-2xl object-cover dark:invert-0 invert"  />
               </div>
             </div>
 
@@ -883,7 +883,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover" />
+              <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover dark:invert-0 invert"  />
               <span className="text-xl font-bold">Nyxro</span>
             </div>
 
