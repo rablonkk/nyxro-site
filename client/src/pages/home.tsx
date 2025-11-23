@@ -38,7 +38,7 @@ const translations = {
     unban: "Unban Users",
     unbanDesc: "Easily remove bans when users are ready to return. Give second chances to members who deserve it.",
     loveNyxro: "Loving Nyxro?",
-    supportVote: "Consider leaving a review on Top.gg — it helps a ton!",
+    supportVote: "Consider leaving a review on Top.gg! it helps a ton.",
     voteNyxro: "Vote for Nyxro",
     leaveReview: "Leave a Review",
     betaProgram: "Beta Program",
