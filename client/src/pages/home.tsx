@@ -74,7 +74,7 @@ const translations = {
     q5Ans: "Join our support server and use the feedback channels, or reach out directly through Discord.",
     meetDeveloper: "Meet the Developer",
     developerIntro: "Nyxro was built with passion and dedication to deliver the best Discord experience.",
-    fullStackCreator: "Full-Stack Developer · Anhanguera",
+    fullStackCreator: "Full-Stack Developer · Anhanguera University",
     developerBio: "When building Nyxro, the idea was simple... Create a bot that delivers great audio and powerful moderation tools without the complexity. That's how Nyxro was born.",
     seeMyProfiles: "See My Profiles",
     documentation: "Documentation",
