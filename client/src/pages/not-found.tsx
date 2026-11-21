@@ -26,7 +26,6 @@ export default function NotFound() {
   const [, setLocation] = useLocation();
   const t = translations[language];
 
-  // Aplica ou remove a classe "dark" no HTML
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");

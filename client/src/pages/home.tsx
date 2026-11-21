@@ -72,6 +72,10 @@ const translations = {
     q4Ans: "Yes! Add the beta bot through the link in the Beta Program section to try upcoming features early.",
     q5Title: "How can I report bugs or suggest features?",
     q5Ans: "Join our support server and use the feedback channels, or reach out directly through Discord.",
+    q6Title: "What is the support process like?",
+    q6Ans: "We have a dedicated support team that is available to help with any questions or issues you may have.",
+    q7Title: "Does Nyxro support other languages besides Portuguese?",
+    q7Ans: "Yes! Nyxro supports multiple languages, including English, Portuguese, and Spanish. You can change the bot's language using the /language command.",
     meetDeveloper: "Meet the Developer",
     developerIntro: "Nyxro was built with passion and dedication to deliver the best Discord experience.",
     fullStackCreator: "Full-Stack Developer · Anhanguera University",
@@ -146,6 +150,10 @@ const translations = {
     q4Ans: "Sim! Basta adicionar o bot beta usando o link na seção Programa Beta.",
     q5Title: "Como posso reportar bugs ou sugerir melhorias?",
     q5Ans: "Entre no nosso servidor de suporte e use os canais de reporte.",
+    q6Title: "Como funciona o processo de suporte?",
+    q6Ans: "Temos uma equipe dedicada de suporte disponível para ajudar com quaisquer perguntas ou problemas que você possa ter.",
+    q7Title: "Nyxro tem suporte a outras línguas além do português?",
+    q7Ans: "Sim! O Nyxro suporta múltiplos idiomas, incluindo inglês, português e espanhol. Você pode alterar o idioma do bot usando o comando /language.",
     meetDeveloper: "Conheça o Desenvolvedor",
     developerIntro: "Nyxro foi criado com dedicação para entregar a melhor experiência no Discord.",
     fullStackCreator: "Desenvolvedor Full Stack · Universidade Anhanguera",
@@ -168,7 +176,6 @@ export default function Home() {
   const [discordAvatar, setDiscordAvatar] = useState<string>("");
   const t = translations[language];
 
-  // Fetch Discord status and avatar using Lanyard API
   useEffect(() => {
     const fetchDiscordData = async () => {
       try {
@@ -191,7 +198,6 @@ export default function Home() {
     };
 
     fetchDiscordData();
-    // Poll every 30 seconds for status updates
     const interval = setInterval(fetchDiscordData, 30000);
     return () => clearInterval(interval);
   }, []);
@@ -236,6 +242,7 @@ export default function Home() {
     '/now-playing': { pt: 'Mostra a música que está em reprodução atualmente' },
     '/search': { pt: 'Procura uma música através do YouTube' },
     '/lyrics': { pt: 'Mostra a letra da música atual' },
+    '/language': { pt: 'Muda o idioma do bot' },
   };
 
   const allCommands = [
@@ -269,6 +276,7 @@ export default function Home() {
     { cmd: '/stats', desc: 'View bot statistics', usage: '/stats', category: 'utility', dev: false },
     { cmd: '/botinfo', desc: 'Display bot information', usage: '/botinfo', category: 'utility', dev: false },
     { cmd: '/help', desc: 'Show help and commands', usage: '/help', category: 'utility', dev: false },
+    { cmd: '/language', desc: 'Change the bot language', usage: '/language <language>', category: 'utility', dev: false },
   ];
 
   const getCommandDesc = (cmd: string) => {
@@ -330,7 +338,7 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-                <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-32 h-32 rounded-2xl object-cover dark:invert-0 invert"  />
+                <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-32 h-32 rounded-2xl object-cover dark:invert-0 invert" />
               </div>
             </div>
 
@@ -795,6 +803,20 @@ export default function Home() {
                   {t.q5Ans}
                 </AccordionContent>
               </AccordionItem>
+
+              <AccordionItem value="item-6" className="border rounded-lg px-6" data-testid="faq-item-6">
+                <AccordionTrigger className="text-lg font-semibold">{t.q6Title}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {t.q6Ans}
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-7" className="border rounded-lg px-6" data-testid="faq-item-7">
+                <AccordionTrigger className="text-lg font-semibold">{t.q7Title}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {t.q7Ans}
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>
@@ -889,7 +911,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover dark:invert-0 invert"  />
+              <img src="/favicon.ico" alt="Nyxro Bot Logo" className="relative w-8 h-8 rounded-2xl object-cover dark:invert-0 invert" />
               <span className="text-xl font-bold">Nyxro</span>
             </div>
 
