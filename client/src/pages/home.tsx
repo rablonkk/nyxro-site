@@ -276,7 +276,7 @@ export default function Home() {
     { cmd: '/stats', desc: 'View bot statistics', usage: '/stats', category: 'utility', dev: false },
     { cmd: '/botinfo', desc: 'Display bot information', usage: '/botinfo', category: 'utility', dev: false },
     { cmd: '/help', desc: 'Show help and commands', usage: '/help', category: 'utility', dev: false },
-    { cmd: '/language', desc: 'Change the bot language', usage: '/language <language>', category: 'utility', dev: false },
+    { cmd: '/language', desc: 'Change the bot language', usage: '/language <language>', category: 'utility', dev: true },
   ];
 
   const getCommandDesc = (cmd: string) => {
